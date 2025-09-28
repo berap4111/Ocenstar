@@ -1,0 +1,164 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #555;
+    line-height: 1.8;
+    overflow-x: hidden;
+    /* Prevent horizontal scroll from AOS */
+}
+
+/* Header Section - Modernized */
+.hero-banner {
+    /* --- Background Image --- */
+    /* Replace '/images/your-background-image.jpg' with the actual path to your image */
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('../assets/image/ship4.jpg');
+
+    /* --- Sizing and Positioning --- */
+    min-height: 50vh;
+    /* Set a height for the banner */
+    background-size: cover;
+    /* Ensures the image covers the entire banner */
+    background-position: center;
+    /* Centers the image */
+    background-repeat: no-repeat;
+    /* Prevents the image from repeating */
+
+    /* --- Content Alignment --- */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    /* --- Text Styling --- */
+    color: #ffffff;
+    /* Sets the text color to white for contrast */
+}
+
+/* Optional: Style the text inside the banner */
+.hero-banner h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.hero-banner p {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.hero-banner h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-banner p {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+/* Content Sections - Modernized */
+.content-section {
+    padding: 6rem 0;
+}
+
+.content-section#welcome-section {
+    background-color: #f8f9fa;
+}
+
+.section-title-wrapper {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-title-wrapper h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #0A2F5B;
+    /* Deep Blue */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    padding-bottom: 1rem;
+    display: inline-block;
+}
+
+.section-title-wrapper h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background-color: #00A8E8;
+    /* Bright Blue Accent */
+}
+
+.section-title-wrapper p.subtitle {
+    color: #00A8E8;
+    /* Bright Blue Accent */
+    font-weight: 400;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 0.5rem;
+}
+
+.content-section .history-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #0A2F5B;
+    /* Deep Blue */
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.content-section p {
+    font-size: 1rem;
+    text-align: left;
+}
+
+.content-section img {
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.content-section img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-banner {
+        padding: 6rem 0;
+    }
+
+    .hero-banner h1 {
+        font-size: 2.5rem;
+    }
+
+    .content-section {
+        padding: 4rem 0;
+    }
+
+    .content-section .section-title-wrapper h2 {
+        font-size: 2rem;
+    }
+
+    .content-section .text-content {
+        margin-top: 2rem;
+    }
+
+    .content-section .img-content {
+        margin-bottom: 2rem;
+    }
+}

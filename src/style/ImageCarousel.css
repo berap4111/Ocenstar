@@ -1,0 +1,41 @@
+img {
+  height: 75vh;       /* no quotes */
+  object-fit: cover;  /* kebab-case, not camelCase */
+}
+.carousel-caption {
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: auto;
+}
+.carousel-caption h3 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.carousel-caption p {
+  font-size: 1.5rem;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+@media (max-width: 768px) {
+  .carousel-caption h3 {
+    font-size: 2rem;
+  }
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  .carousel-caption {
+    padding: 0 1rem;
+  }
+  .carousel-caption h3 {
+    font-size: 1.5rem;
+  }
+  .carousel-caption p {
+    font-size: 0.875rem;
+  }
+}
+/* End of ImageCarousel.css */
+/* --- Header.css --- */ 

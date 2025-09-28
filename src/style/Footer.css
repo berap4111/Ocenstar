@@ -1,0 +1,141 @@
+.footer-section {
+    background: #1a1a1a;
+    color: #9a9a9a;
+    padding: 4rem 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    border-top: 5px solid #ff4500;
+}
+
+.footer-section h5 {
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-section .nav-link {
+    padding: 0.3rem 0;
+    color: #9a9a9a;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.footer-section .nav-link:before {
+    content: '→';
+    position: absolute;
+    left: -15px;
+    opacity: 0;
+    transition: all 0.3s ease;
+    color: #ff4500;
+}
+
+.footer-section .nav-link:hover {
+    color: #ffffff;
+    transform: translateX(10px);
+}
+
+.footer-section .nav-link:hover:before {
+    opacity: 1;
+    left: -5px;
+}
+
+.map-container {
+    border-radius: 8px;
+    overflow: hidden;
+    /* This is crucial for the border-radius to apply to the iframe */
+    height: 220px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    filter: grayscale(100%);
+    /* Creates a stylish black-and-white map */
+}
+
+/* Ensures the iframe itself fills the container without its own border */
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.whatsapp-float {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+.office-info {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.office-info h6 {
+    color: #ffffff;
+}
+
+.office-info p {
+    margin-bottom: 0;
+    font-size: 0.85rem;
+}
+
+.office-info a {
+    color: #9a9a9a;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.office-info a:hover {
+    color: #ff4500;
+}
+
+.form-control {
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+    color: #fff;
+}
+
+.form-control:focus {
+    background-color: #2a2a2a;
+    border-color: #ff4500;
+    box-shadow: 0 0 0 0.2rem rgba(255, 69, 0, 0.25);
+    color: #fff;
+}
+
+.btn-danger {
+    background-color: #ff4500;
+    border-color: #ff4500;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-danger:hover {
+    background-color: #e03e00;
+    border-color: #e03e00;
+    transform: translateY(-2px);
+}
+.copyright-bar {
+    background: #0d0d0d;
+    color: #666;
+    padding: 0.5rem 0;    
+    font-size: 0.85rem;
+    border-top: 1px solid #222222bc;
+}

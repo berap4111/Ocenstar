@@ -1,0 +1,113 @@
+/* --- Overall Section Styling --- */
+.services-section {
+  background-color: #f8f9fa; /* Light background for contrast */
+  color: #333;
+}
+
+.services-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #2c3e50; /* Darker title for impact */
+  position: relative;
+  padding-bottom: 15px;
+}
+
+/* Subtle underline for the title */
+.services-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #007bff; /* Primary accent color */
+  border-radius: 2px;
+}
+
+/* --- Service Item Styling --- */
+.service-item {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* --- Image Wrapper for Circle and Depth --- */
+.service-image-wrapper {
+  width: 120px; /* Fixed width for the circle */
+  height: 120px; /* Fixed height for the circle */
+  border-radius: 50%; /* Makes the container circular */
+  overflow: hidden; /* Hides image parts outside the circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  border: 4px solid #ffffff; /* White border for crispness */
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  z-index: 1; /* Ensures shadow is visible */
+}
+
+/* Inner shadow for more depth, mimicking a slightly recessed look */
+.service-image-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.1); /* Inner shadow */
+    z-index: 2;
+}
+
+.service-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures image fills the circle */
+  display: block;
+  filter: grayscale(80%); /* Desaturate images for a minimal look */
+  transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* --- Text Styling --- */
+.service-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #555;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  line-height: 1.4;
+  letter-spacing: 0.5px;
+}
+
+/* --- Hover Effects for Professionalism --- */
+.service-item:hover .service-image-wrapper {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+  transform: translateY(-5px); /* Subtle lift effect */
+  border-color: #007bff; /* Highlight border on hover */
+}
+
+.service-item:hover .service-image {
+  filter: grayscale(0%); /* Full color on hover */
+  transform: scale(1.05); /* Slightly zoom image on hover */
+}
+
+.service-item:hover .service-title {
+  color: #007bff; /* Highlight text on hover */
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+  .services-title {
+    font-size: 2rem;
+  }
+  .service-image-wrapper {
+    width: 100px;
+    height: 100px;
+  }
+  .service-title {
+    font-size: 0.85rem;
+  }
+}
+
+

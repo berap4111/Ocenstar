@@ -1,0 +1,107 @@
+/* --- 1. Configuration: Use CSS Variables for Easy Changes --- */
+:root {
+  --logo-height: 50px;
+  --logo-width: 120px; /* Added variable for consistent width */
+  --logo-spacing: 2.5rem; /* Increased spacing slightly for better visual separation */
+  --animation-speed: 30s; /* Slowed down slightly for a more relaxed feel */
+}
+
+/* --- 2. Outer Section Wrapper --- */
+.logo-section {
+  background-color: #fcfcfc;
+  padding: 3rem 0;
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
+/* --- 3. Slider Viewport (The Visible Area) --- */
+.logo-slider {
+  width: 100%;
+  overflow: hidden; /* Crucial: Hides the logos outside this box */
+  position: relative;
+}
+
+/* Professional Touch: Add a fade effect to the left edge */
+.logo-slider::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 75px;
+  z-index: 2;
+  pointer-events: none;
+  background: linear-gradient(to left, rgba(252, 252, 252, 0), #fcfcfc);
+}
+
+/* --- 4. The Sliding Logo Track (The Moving Part) --- */
+.logo-track {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  animation: slide-left var(--animation-speed) linear infinite;
+}
+
+/* Pause the animation on hover */
+.logo-slider:hover .logo-track {
+  animation-play-state: paused;
+}
+
+/* --- 5. Individual Logo Styling --- */
+.logo-track .logo {
+  height: var(--logo-height);
+  width: var(--logo-width); /* Set a fixed width for all logos */
+  object-fit: contain; /* Ensure logos scale correctly without distortion */
+  flex-shrink: 0;
+  margin: 0 var(--logo-spacing); /* Use margin instead of margin-right for better centering */
+  opacity: 0.6; /* Slightly increased default opacity */
+  filter: grayscale(100%);
+  transition: all 0.3s ease-in-out; /* Smoother transition timing */
+}
+
+/* --- 6. Hover Effects for Logos --- */
+.logo-track .logo:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+  transform: scale(1.1); /* Slightly more pronounced hover effect */
+}
+
+/* --- 7. Animation Keyframes --- */
+@keyframes slide-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    /* This moves the track exactly the width of the first set of logos */
+    transform: translateX(-50%);
+  }
+}
+
+/* --- 8. Responsive & Accessibility --- */
+@media (prefers-reduced-motion: reduce) {
+  .logo-track {
+    animation: none; /* Stop animation for users who prefer it */
+  }
+}
+
+@media (max-width: 992px) {
+  :root {
+    --logo-height: 40px;
+    --logo-width: 100px; /* Adjust width for smaller screens */
+    --logo-spacing: 2rem;
+    --animation-speed: 25s;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --logo-height: 35px; /* Adjusted for better mobile view */
+    --logo-width: 85px; /* Adjust width for mobile screens */
+    --logo-spacing: 1.5rem;
+    --animation-speed: 20s;
+  }
+  .logo-section {
+    padding: 2.5rem 0;
+  }
+}
+

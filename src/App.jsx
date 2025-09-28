@@ -1,0 +1,57 @@
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Routes, Route } from "react-router-dom";
+
+// Layout Components
+import Header from "./component/Header.jsx";
+import Footer from "./component/Footer.jsx";
+
+// Home Page Sections
+import Carousel from "./component/ImageCarousel.jsx";
+import HomeMiddle from "./component/HomeMiddle.jsx";
+import ServicesSection from "./component/ServicesSection.jsx";
+import Client from "./component/Client.jsx";
+
+// Pages
+import About from "./component/About.jsx";
+import OceanstarShipping from "./component/OceanstarShipping.jsx";
+import OcenstarTrading from "./component/OcenstarTrading.jsx";
+
+function App() {
+  return (
+    <>
+      {/* Header is always visible */}
+      <Header />
+
+      {/* Define routes for different pages */}
+      <Routes>
+        {/* Home Page */}
+        <Route
+          path="/"
+          element={
+            <>
+              <Carousel />
+              <HomeMiddle />
+              <ServicesSection />
+              <Client />
+            </>
+          }
+        />
+
+        {/* About Page */}
+        <Route path="/About" element={<About />} />
+        <Route path="/OceanstarShipping" element={<OceanstarShipping />} />
+        {/* Add more routes as needed */}
+        <Route path="/OcenstarTrading" element={<OcenstarTrading />} />
+
+        {/* 404 - Page Not Found */}
+        <Route path="*" element={<h2 className="text-center mt-5">404 - Page Not Found</h2>} />
+      </Routes>
+
+      {/* Footer is always visible */}
+      <Footer />
+    </>
+  );
+}
+
+export default App;

@@ -1,0 +1,88 @@
+/* --- Main Navbar Container --- */
+.navbar-modern {
+  background-color: #3222c6d4; /* Your semi-transparent red */
+  padding: 0.5rem 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* A slightly more pronounced shadow */
+  transition: all 0.3s ease-in-out;
+  backdrop-filter: blur(10px); /* Stylish blur effect for semi-transparent background */
+}
+
+
+/* --- Navigation Links --- */
+.navbar-modern .nav-link,
+.navbar-modern .dropdown-toggle {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1rem; /* Slightly larger for better readability */
+  letter-spacing: 0.8px; /* More spacing for a premium feel */
+  padding: 0.5rem 1.25rem;
+  position: relative;
+  transition: all 0.3s ease; /* Transition all properties for smoother effects */
+}
+
+/* --- Hover & Active Effects --- */
+.navbar-modern .nav-link:hover,
+.navbar-modern .dropdown-toggle:hover,
+.navbar-modern .nav-link.active {
+  color: #2fd3cd !important; /* Your cyan accent color */
+  transform: translateY(-3px); /* Add a subtle lift effect on hover */
+}
+
+
+/* --- Dropdown Menu Styling --- */
+/* Style the dropdown toggle icon */
+.navbar-modern .dropdown-toggle svg {
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+}
+
+.navbar-modern .dropdown-toggle:hover svg {
+  transform: rotate(180deg); /* Rotate icon when dropdown is hovered */
+}
+
+.navbar-modern .dropdown-menu {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem !important; /* More space from the top */
+  animation: fadeIn 0.2s ease-out;
+  background-color: #ffffff; /* Ensure dropdown is not transparent */
+}
+
+.navbar-modern .dropdown-item {
+  font-weight: 500;
+  color: #333;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.2s ease;
+}
+
+.navbar-modern .dropdown-item:hover {
+  background-color: #f0f5f9; /* A light, clean hover background */
+  color: #2fd3cd; /* Use your cyan accent color for consistency */
+  transform: translateX(5px);
+}
+
+/* Keyframe for the fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Mobile styles */
+@media (max-width: 768px) { /* Bootstrap lg breakpoint */
+  .navbar-modern .nav-link,
+  .navbar-modern .dropdown-item {
+    font-size: 14px; /* Smaller font on mobile */
+    text-align: center; /* Center text */
+    padding: 0.5rem 0; /* Adjust spacing */
+  }
+
+  .navbar-modern .dropdown-menu {
+    text-align: center; /* Center dropdown items */
+  }
+}
