@@ -1,5 +1,5 @@
 import React from 'react'
-import ship4 from "../assets/image/ship4.jpg";
+import ship4 from "../assets/image/Ship4.jpg";
 const homeMiddle  = () => {
   return (
  <div className="container mt-5">

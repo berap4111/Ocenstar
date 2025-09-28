@@ -1,11 +1,12 @@
 // Client logos
-import anl from "../assets/ClientLogo/anl.webp";
-import clipper from "../assets/ClientLogo/clipper.webp";
-import epicGas from "../assets/ClientLogo/epic-gas.webp";
-import fleet from "../assets/ClientLogo/fleet-management-limited.webp";
-import maersk from "../assets/ClientLogo/maersk-tankers.webp";
-import norden from "../assets/ClientLogo/norden.webp";
-import stolt from "../assets/ClientLogo/stolt-nielsen-limited.webp";
+import anl from "../assets/ClientLogo/Anl.webp";
+import clipper from "../assets/ClientLogo/Clipper.webp";
+import epicGas from "../assets/ClientLogo/Epic-Gas.webp";
+import fleet from "../assets/ClientLogo/Fleet-Management-Limited.webp";
+import maersk from "../assets/ClientLogo/Maersk-Tankers.webp";
+import norden from "../assets/ClientLogo/Norden.webp";
+import stolt from "../assets/ClientLogo/Stolt-Nielsen-Limited.webp";
+
 
 // Import the corresponding CSS file
 import "../style/Client.css";

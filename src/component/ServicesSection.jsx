@@ -2,18 +2,18 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import '../style/ServicesSection.css'; // Custom styles for this section
 // --- Corrected Imports using camelCase ---
-import charteringAndTrading from '../assets/ServiceImage/chartering-and-trading.webp';
-import manningAndTechnicalManagement from '../assets/ServiceImage/manning-and-technical-management.webp';
-import portAndTerminalOperations from '../assets/ServiceImage/port-and-terminal-operations.webp';
-import consultingServices from '../assets/ServiceImage/consulting-Services.webp'; // Note: consulting-Services.webp has a capital 'S'
-import shipRepairAndMaintenance from '../assets/ServiceImage/ship-repair-and-maintenance.webp';
-import shipAuditAndInspections from '../assets/ServiceImage/ship-audit-and-inspections.webp';
-import shippingAndCargoServices from '../assets/ServiceImage/shipping-and-cargo-services.webp';
-import shipRecyclingAndDemolition from '../assets/ServiceImage/ship-recycling-and-demolition.webp';
-import salesAndPurchase from '../assets/ServiceImage/sales-and-purchase.webp';
-import shipDryDocking from '../assets/ServiceImage/ship-dry-docking.webp';
-import shipCargoHoldCleaningServices from '../assets/ServiceImage/ship-cargo-hold-cleaning-services.webp';
-import shipOperationAndManagement from '../assets/ServiceImage/ship-operation-and-management.webp';
+import charteringAndTrading from '../assets/ServiceImage/Chartering-and-trading.webp';
+import manningAndTechnicalManagement from '../assets/ServiceImage/Manning-and-technical-management.webp';
+import portAndTerminalOperations from '../assets/ServiceImage/Port-and-terminal-operations.webp';
+import consultingServices from '../assets/ServiceImage/Consulting-Services.webp'; // Note: consulting-Services.webp has a capital 'S'
+import shipRepairAndMaintenance from '../assets/ServiceImage/Ship-repair-and-maintenance.webp';
+import shipAuditAndInspections from '../assets/ServiceImage/Ship-audit-and-inspections.webp';
+import shippingAndCargoServices from '../assets/ServiceImage/Shipping-and-cargo-services.webp';
+import shipRecyclingAndDemolition from '../assets/ServiceImage/Ship-recycling-and-demolition.webp';
+import salesAndPurchase from '../assets/ServiceImage/Sales-and-purchase.webp';
+import shipDryDocking from '../assets/ServiceImage/Ship-dry-docking.webp';
+import shipCargoHoldCleaningServices from '../assets/ServiceImage/Ship-cargo-hold-cleaning-services.webp';
+import shipOperationAndManagement from '../assets/ServiceImage/Ship-operation-and-management.webp';
 
 
 

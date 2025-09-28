@@ -5,9 +5,9 @@ import { BsWhatsapp } from "react-icons/bs";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js"; // optional
 import "../style/Header.css";
-import logo from "../assets/image/logo.png";
-import ct1 from "../assets/image/australian-institute-of-marine-surveyors.webp";
-import ct2 from "../assets/image/dun-bradstreet-dun-registered.webp";
+import logo from "../assets/image/Logo.png";
+import ct1 from "../assets/image/Australian-institute-of-marine-surveyors.webp";
+import ct2 from "../assets/image/Dun-bradstreet-dun-registered.webp";
 export default function Header() {
   //navigation bar
   const navLinks = [

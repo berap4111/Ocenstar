@@ -1,7 +1,7 @@
 import Carousel from "react-bootstrap/Carousel";
-import ship1 from "../assets/image/ship1.jpg";
-import ship2 from "../assets/image/ship2.jpg";
-import ship3 from "../assets/image/ship3.jpg";
+import ship1 from "../assets/image/Ship1.jpg";
+import ship2 from "../assets/image/Ship2.jpg";
+import ship3 from "../assets/image/Ship3.jpg";
 import '../style/ImageCarousel.css'; // Import custom CSS for additional styling
 function ImageCarousel() {
   return (

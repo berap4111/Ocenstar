@@ -1,6 +1,6 @@
 // We'll use placeholder paths for the images.
 // You should replace these with the actual paths to your images.
-import ship from "../assets/image/ship1.jpg"; // Placeholder path
+import ship from "../assets/image/Ship1.jpg"; // Placeholder path
 
 export const productCategories = [
     {

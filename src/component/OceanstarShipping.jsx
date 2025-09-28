@@ -1,9 +1,9 @@
 import React from "react";
 import Card from "./Card.jsx"; // import reusable card
-import SurveysAudits from "../assets/ShippingImg/Remotesurveys.jpg"
-import ShipRepairs from "../assets/ShippingImg/Shiprepairs.jpg"
-import MarineLogistics from "../assets/ShippingImg/Marinelogistics.jpg"
-import OtherServices from "../assets/ShippingImg/Marinelogistics.jpg"
+import SurveysAudits from "../assets/ShippingImg/RemoteSurveys.jpg"
+import ShipRepairs from "../assets/ShippingImg/ShipRepairs.jpg"
+import MarineLogistics from "../assets/ShippingImg/MarineLogistics.jpg"
+
 
 const OceanstarShipping = () => {
   // ✅ card data array

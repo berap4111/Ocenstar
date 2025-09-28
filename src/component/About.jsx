@@ -1,8 +1,8 @@
 // src/component/About.jsx
 import React from "react";
 import SectionMapper from "./SectionMapper";
-import ship1 from "../assets/image/ship1.jpg";
-import ship2 from "../assets/image/ship2.jpg";
+import ship1 from "../assets/image/Ship1.jpg";
+import ship2 from "../assets/image/Ship2.jpg";
 import "../style/About.css";
 
 const ShipHoldings = [
