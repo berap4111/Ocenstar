@@ -4,7 +4,7 @@ const homeMiddle  = () => {
   return (
  <div className="container mt-5">
   <h1 className="text-center mb-5 fw-bold">
-    TRIDENT SHIPPING & TRADING PTE. LTD.
+    OCEANSTAR MARINE SERVICES & CONTRACTING LLC
   </h1>
 
   <div className="row align-items-center g-4">

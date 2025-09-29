@@ -92,7 +92,7 @@ const Footer = () => {
                 <Form.Group className="mb-3" controlId="formGroupMessage">
                   <Form.Control as="textarea" rows={4} placeholder="Your Message" />
                 </Form.Group>
-                <Button variant="danger" type="submit" className="w-100">
+                <Button variant="danger" type="submit" className="w-100" onSubmit={(e) => e.preventDefault()}>
                   Send Message
                 </Button>
               </Form>
