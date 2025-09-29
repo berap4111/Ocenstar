@@ -4,21 +4,8 @@ import '../style/Footer.css';
 import { NavLink } from 'react-router-dom';
 // This component assumes you have react-bootstrap and bootstrap CSS installed and configured in your project.
 // npm install react-bootstrap bootstrap
+import { services } from "./ServicesItem/Services.js";
 
-const services = [
-  { to: '/ship-audit', text: 'Ship Audit And Inspections' },
-  { to: '/shipping-cargo', text: 'Shipping And Cargo Services' },
-  { to: '/ship-recycling', text: 'Ship Recycling And Demolition' },
-  { to: '/ship-sales', text: 'Ship Sales And Purchase' },
-  { to: '/ship-dry-docking', text: 'Ship Dry Docking' },
-  { to: '/ship-cleaning', text: 'Ship Cargo hold, Tank cleaning & Hull cleaning' },
-  { to: '/ship-operation', text: 'Ship Operation And Management' },
-  { to: '/manning-technical', text: 'Manning and Technical Management' },
-  { to: '/port-terminal', text: 'Port and Terminal Operations' },
-  { to: '/chartering-trading', text: 'Chartering and Trading' },
-  { to: '/ship-repair', text: 'Ship repair and maintenance' },
-  { to: '/consulting', text: 'Consulting services' },
-];
 
 const offices = [
     {
@@ -52,7 +39,7 @@ const Footer = () => {
               <h5>Services</h5>
               <Nav className="flex-column">
                 {services.map((service) => (
-                  <Nav.Link as={NavLink} key={service.href} href={service.href}>
+                  <Nav.Link as={NavLink} key={service.href} href={service.to}>
                     {service.text}
                   </Nav.Link>
                 ))}

@@ -12,7 +12,7 @@ body {
     /* Replace '/images/your-background-image.jpg' with the actual path to your image */
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url('../assets/image/ship4.jpg');
+        url('../assets/image/Ship4.jpg');
 
     /* --- Sizing and Positioning --- */
     min-height: 50vh;

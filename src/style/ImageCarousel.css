@@ -1,41 +1,71 @@
+/* ------------------ Carousel Images ------------------ */
 img {
-  height: 75vh;       /* no quotes */
-  object-fit: cover;  /* kebab-case, not camelCase */
+  height: 75vh;           /* Full viewport height */
+  object-fit: cover;      /* Cover while maintaining aspect ratio */
 }
+
+/* ------------------ Captions ------------------ */
 .carousel-caption {
   top: 50%;
   transform: translateY(-50%);
   bottom: auto;
+  text-align: center;
 }
+
 .carousel-caption h3 {
   font-size: 3rem;
   font-weight: bold;
   color: #fff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
+
 .carousel-caption p {
   font-size: 1.5rem;
   color: #fff;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
+
+/* ------------------ Responsive Captions ------------------ */
 @media (max-width: 768px) {
   .carousel-caption h3 {
     font-size: 2rem;
   }
+
   .carousel-caption p {
     font-size: 1rem;
   }
 }
+
 @media (max-width: 576px) {
   .carousel-caption {
     padding: 0 1rem;
   }
+
   .carousel-caption h3 {
     font-size: 1.5rem;
   }
+
   .carousel-caption p {
     font-size: 0.875rem;
   }
 }
-/* End of ImageCarousel.css */
-/* --- Header.css --- */ 
+
+/* ------------------ Controls & Indicators ------------------ */
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 2; /* ensure arrows appear above images */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5); /* dark semi-transparent background */
+  border-radius: 50%;                   /* make arrows circular */
+  width: 3rem;                           /* custom width */
+  height: 3rem;                          /* custom height */
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.7));
+  background-size: 100%, 100%;           /* ensure proper scaling */
+}
+
+.carousel-indicators li {
+  background-color: #000; /* black dots */
+}
