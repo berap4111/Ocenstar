@@ -8,7 +8,7 @@ import "../style/About.css";
 const ShipHoldings = [
   {
     id: "about-trident",
-    title: "About Trident Shipping",
+    title: "About Ocensatr Shipping",
     subtitle: "Delving into our elements",
     image: ship2,
     imageAlt: "Buoy in the ocean at sunset",
