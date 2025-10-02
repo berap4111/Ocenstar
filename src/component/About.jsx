@@ -3,7 +3,7 @@ import React from "react";
 import SectionMapper from "./SectionMapper";
 import ship1 from "../assets/image/Ship1.jpg";
 import ship2 from "../assets/image/Ship2.jpg";
-import "../style/About.css";
+import "../style/SectionMapper.css";
 
 const ShipHoldings = [
   {

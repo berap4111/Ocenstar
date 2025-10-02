@@ -7,8 +7,7 @@ import { BsWhatsapp } from "react-icons/bs";
 import "../style/Header.css";
 import { services } from "./ServicesItem/Services.js";
 import logo from "../assets/image/Logo.png";
-import ct1 from "../assets/image/Australian-institute-of-marine-surveyors.webp";
-import ct2 from "../assets/image/Dun-bradstreet-dun-registered.webp";
+
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -28,11 +27,11 @@ export default function Header() {
     <>
       {/* Top Contact Bar */}
       <div className="bg-white py-3 border-bottom vh-40">
-        <Container fluid>
+        <Container >
           <Row className="align-items-center text-center text-md-start">
             {/* Logo */}
-            <Col md={2} xs={12} className="d-flex justify-content-center">
-              <img src={logo} alt="Trident Logo" style={{ maxHeight: HightMesuer }} className="w-40" />
+            <Col md={6} xs={12} className="d-flex justify-content-lg-start justify-content-center  mb-md-0">
+              <img src={logo} alt="Trident Logo" style={{ maxHeight: HightMesuer }} className="w-40  " />
             </Col>
 
             {/* Contact Info */}
@@ -63,12 +62,7 @@ export default function Header() {
             </Col>
 
             {/* Certificates */}
-            <Col md={2} xs={12} className="d-flex justify-content-center justify-content-md-start gap-3">
-              <img src={ct2} alt="Certificate" style={{ maxHeight: HightMesuer }} />
-            </Col>
-            <Col md={2} xs={12} className="d-flex justify-content-center justify-content-md-start gap-3">
-              <img src={ct1} alt="Certificate" style={{ maxHeight: HightMesuer }} />
-            </Col>
+            
           </Row>
         </Container>
       </div>

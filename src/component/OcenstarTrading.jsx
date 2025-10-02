@@ -3,8 +3,8 @@ import React from "react";
 import SectionMapper from "./SectionMapper.jsx";
 import ship1 from "../assets/image/Ship1.jpg";
 import ship2 from "../assets/image/Ship2.jpg";
-import "../style/About.css";
-import FlipCard from "./FlipCardContainer.jsx";
+import "../style/SectionMapper.css";
+import FlipCard from "./FlipCard.jsx";
 import "../style/OcenstarTrading.css"; // Import FlipCard specific styles 
 
 import { productCategories } from './productData.jsx'; 

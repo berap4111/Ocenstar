@@ -80,7 +80,7 @@ const ServicesSection = () => {
         <h2 className="text-center mb-5 services-title">OUR SERVICES</h2>
         <Row className="justify-content-center">
           {services.map((service, index) => (
-            <Col xs={12} sm={6} md={4} lg={3} key={index} className="mb-4">
+            <Col xs={6} sm={6} md={4} lg={3} key={index} className="mb-4">
               <div className="service-item text-center">
                 <div className="service-image-wrapper mx-auto mb-3">
                   <img src={service.image} alt={service.title} className="service-image" />
@@ -94,7 +94,7 @@ const ServicesSection = () => {
 
     </section>
 
-    //our Client section
+    
   );
 };
 
