@@ -25,7 +25,7 @@ const homeMiddle  = () => {
           Welcome to Ocean Star Marine
         </h2>
         <p className="text-center text-muted mx-auto" style={{ maxWidth: "550px", lineHeight: "1.7" }}>
-          Your Trusted Partner in Global Shipping and Maritime Solutions. Since 2010, 
+          Your Trusted Partner in Global Shipping and Maritime Solutions. Since 2024, 
           Ocean Star Marine has been at the forefront of the maritime industry, delivering 
           unparalleled services in ship management, chartering, and maritime consultancy. 
           Our commitment to excellence and customer satisfaction has made us a preferred 

@@ -5,19 +5,19 @@ import ship1 from "../assets/image/Ship1.jpg";
 import ship2 from "../assets/image/Ship2.jpg";
 import "../style/SectionMapper.css";
 import FlipCard from "./FlipCard.jsx";
-import "../style/OcenstarTrading.css"; // Import FlipCard specific styles 
+import "../style/OceanstarTrading.css"; // Import FlipCard specific styles 
 
 import { productCategories } from './productData.jsx'; 
 const ShipHoldings = [
   {
-    id: "about-trident",
-    title: "Ocenstar Shipping",
+    id: "about-Oceanstar",
+    title: "Oceanstar Shipping",
     subtitle: "Delving into our elements",
     image: ship2,
     imageAlt: "Buoy in the ocean at sunset",
     imageFirst: false,
     content: [
-      "Trident Shipping & Trading is the Organization Managed By Highly Trained Individuals of Professional Orientation with a Passion For The Industry...",
+      "Oceanstar Shipping & Trading is the Organization Managed By Highly Trained Individuals of Professional Orientation with a Passion For The Industry...",
       "Our international network of partners have been hand selected providing a high standard of services..."
     ]
   },
@@ -45,7 +45,7 @@ const About = () => {
       {/* Hero Header */}
       <header className="hero-banner">
         <div className="container">
-          <h1 data-aos="fade-down">Ocenstar ShipHoldings</h1>
+          <h1 data-aos="fade-down">Oceanstar ShipHoldings</h1>
           <p data-aos="fade-up" data-aos-delay="200">Know Us - More Here</p>
         </div>
       </header>

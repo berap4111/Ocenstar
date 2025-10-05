@@ -11,7 +11,7 @@ const OceanstarShipping = () => {
     {
       image: SurveysAudits,
       title: "Surveys & Audits",
-      text: "We provide high-quality remote surveys for ships. lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      text: "We provide high-quality remote surveys for ships.",
       buttonText: "Learn More",
       buttonLink: "#remote",
     },

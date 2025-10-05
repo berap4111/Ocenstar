@@ -8,13 +8,13 @@ import "../style/SectionMapper.css";
 const ShipHoldings = [
   {
     id: "about-trident",
-    title: "About Ocensatr Shipping",
+    title: "ABOUT OCEANSTAR MARINE SERVICES & CONTRACTING LLC",
     subtitle: "Delving into our elements",
     image: ship2,
     imageAlt: "Buoy in the ocean at sunset",
     imageFirst: false,
     content: [
-      "Trident Shipping & Trading is the Organization Managed By Highly Trained Individuals of Professional Orientation with a Passion For The Industry...",
+      "Oceanstar Shipping & Trading is the Organization Managed By Highly Trained Individuals of Professional Orientation with a Passion For The Industry...",
       "Our international network of partners have been hand selected providing a high standard of services..."
     ]
   },
@@ -38,7 +38,7 @@ const About = () => {
       {/* Hero Header */}
       <header className="hero-banner">
         <div className="container">
-          <h1 data-aos="fade-down">Ocenstar ShipHoldings</h1>
+          <h1 data-aos="fade-down">OCEANSTAR MARINE SERVICES & CONTRACTING LLC</h1>
           <p data-aos="fade-up" data-aos-delay="200">Know Us - More Here</p>
         </div>
       </header>

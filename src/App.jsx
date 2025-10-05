@@ -5,6 +5,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js"; // Bootstrap JS (includes Po
 // Layout Components
 import Header from "./component/Header.jsx";
 import Footer from "./component/Footer.jsx";
+import ContactUs from "./component/ContactUs.jsx";
 
 // Home Page Sections
 import Carousel from "./component/ImageCarousel.jsx";
@@ -15,7 +16,7 @@ import Client from "./component/Client.jsx";
 // Pages
 import About from "./component/About.jsx";
 import OceanstarShipping from "./component/OceanstarShipping.jsx";
-import OcenstarTrading from "./component/OcenstarTrading.jsx";
+import OceanstarTrading from "./component/OceanstarTrading.jsx";
 
 // Service Item Pages
 import ShipsTrading from "./component/ServicesItem/ShipsTrading.jsx";
@@ -44,8 +45,10 @@ function App() {
         {/* About Page */}
         <Route path="/About" element={<About />} />
         <Route path="/OceanstarShipping" element={<OceanstarShipping />} />
+        {/* Contact Us Page */}
+        <Route path="/ContactUs" element={<ContactUs />} />
         {/* Add more routes as needed */}
-        <Route path="/OcenstarTrading" element={<OcenstarTrading />} />
+        <Route path="/OceanstarTrading" element={<OceanstarTrading />} />
         {/* Service Item Page with dynamic routing */}
         <Route path="/services/ships-trading" element={<ShipsTrading />} />
         {/* 404 - Page Not Found */}

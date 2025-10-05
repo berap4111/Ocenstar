@@ -1,13 +1,18 @@
 import { useState } from "react";
 import { Container, Row, Col, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
-import { FaFacebook, FaLinkedin, FaInstagram, FaBars, FaTimes } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaLinkedin,
+  FaInstagram,
+  FaBars,
+  FaTimes,
+} from "react-icons/fa";
 import { BsWhatsapp } from "react-icons/bs";
 
 import "../style/Header.css";
 import { services } from "./ServicesItem/Services.js";
 import logo from "../assets/image/Logo.png";
-
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -19,50 +24,75 @@ export default function Header() {
     { label: "Home", path: "/" },
     { label: "About Us", path: "/About" },
     { label: "OCEANSTAR Shipping", path: "/OceanstarShipping" },
-    { label: "OCEANSTAR Ship Holdings", path: "/OcenstarShipHoldings" },
-    { label: "OCEANSTAR Trading", path: "/Ocenstartrading" },
+    { label: "OCEANSTAR Ship Holdings", path: "/OceanstarShipHoldings" },
+    { label: "OCEANSTAR Trading", path: "/OceanstarTrading" },
   ];
 
   return (
     <>
       {/* Top Contact Bar */}
-      <div className="bg-white py-3 border-bottom vh-40">
-        <Container >
+      <div className=" bg-white py-3 border-bottom vh-40">
+        <Container>
           <Row className="align-items-center text-center text-md-start">
             {/* Logo */}
-            <Col md={6} xs={12} className="d-flex justify-content-lg-start justify-content-center  mb-md-0">
-              <img src={logo} alt="Trident Logo" style={{ maxHeight: HightMesuer }} className="w-40  " />
+            <Col
+              md={7}
+              xs={12}
+              className="d-flex justify-content-lg-start justify-content-center mb-md-0"
+            >
+              <img
+                src={logo}
+                alt="Trident Logo"
+                style={{ maxHeight: HightMesuer }}
+                className="img-fluid"
+              />
             </Col>
 
             {/* Contact Info */}
-            <Col md={2} xs={12} className="d-flex flex-column align-items-center text-center">
+            <Col
+              md={2}
+              xs={12}
+              className="d-flex flex-column align-items-center text-center"
+            >
               <h6>Contact Us</h6>
-              <p className="mb-1">
-                <span className="fw-bold">Dubai:</span> +971 527591056
+              <p className="mb-1 text-nowrap">
+                <span className="fw-bold">Abu Dhabi:</span> +971 527591056
+              </p>
+              <p className="mb-0 text-success text-nowrap ">
+                <BsWhatsapp /> +91 9163234799
               </p>
             </Col>
 
-            {/* Email + WhatsApp */}
-            <Col md={2} xs={12} className="d-flex flex-column align-items-center text-center">
+            {/* Email Info */}
+            <Col
+              md={2}
+              xs={12}
+              className="d-flex flex-column align-items-center text-center"
+            >
               <h6>Email Us</h6>
               <p className="mb-1">GM@oceanstarmarine.ae</p>
-              <p className="mb-0 text-success">
-                <BsWhatsapp /> +91 9163234799 <br /> +971503261904
-              </p>
+              <p className="mb-1">ceo@oceanstarmarine.ae</p>
             </Col>
 
             {/* Social Media */}
-            <Col md={2} xs={12} className="d-flex flex-column align-items-center text-center">
+            <Col
+              md={1}
+              xs={12}
+              className="d-flex flex-column align-items-center text-center"
+            >
               <h6>Follow us:</h6>
               <div className="d-flex justify-content-center justify-content-md-start gap-3">
-                <a href="#"><FaFacebook size={22} /></a>
-                <a href="#"><FaLinkedin size={22} /></a>
-                <a href="#"><FaInstagram size={22} /></a>
+                <a href="#">
+                  <FaFacebook size={22} />
+                </a>
+                <a href="#">
+                  <FaLinkedin size={22} />
+                </a>
+                <a href="#">
+                  <FaInstagram size={22} />
+                </a>
               </div>
             </Col>
-
-            {/* Certificates */}
-            
           </Row>
         </Container>
       </div>
@@ -98,7 +128,11 @@ export default function Header() {
                     key={service.id}
                     as={NavLink}
                     to={service.to}
-                    style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "0.5rem",
+                    }}
                   >
                     <span>{service.icon}</span>
                     <span>{service.text}</span>
@@ -111,7 +145,9 @@ export default function Header() {
                 <NavDropdown.Item href="#videos">Videos</NavDropdown.Item>
               </NavDropdown>
 
-              <Nav.Link href="#contact">Contact Us</Nav.Link>
+              <Nav.Link as={NavLink} to="/ContactUs">
+                Contact Us
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

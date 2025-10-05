@@ -3,6 +3,7 @@ import { Container, Row, Col, Nav, Form, Button } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import '../style/Footer.css';
 import { services } from "./ServicesItem/Services.js";
+import { FaWhatsapp } from 'react-icons/fa';
 
 const offices = [
   {
@@ -47,10 +48,20 @@ const Footer = () => {
 
   return (
     <>
-      {/* WhatsApp Floating Button */}
-      <a href="https://wa.me/+919163234799" className="whatsapp-float" target="_blank" rel="noopener noreferrer">
-        {/* SVG icon */}
-      </a>
+{/* WhatsApp Floating Button */}
+<a
+  href="https://wa.me/+919163234799"
+  className="whatsapp-float"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Chat with us on WhatsApp"
+  title="Chat with us on WhatsApp"
+>
+  <FaWhatsapp size={32} color="#FFF" />
+</a>
+
+
+
 
       <footer className="footer-section">
         <Container>

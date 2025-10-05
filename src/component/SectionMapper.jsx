@@ -8,7 +8,7 @@ const SectionMapper = ({ sections }) => {
         <section id={section.id} className="content-section" key={section.id}>
           <div className="container">
             <div className="section-title-wrapper" data-aos="fade-up">
-              <h2>{section.title}</h2>
+              <h3>{section.title}</h3>
               <p className="subtitle">{section.subtitle}</p>
             </div>
             <div className="row align-items-center">
